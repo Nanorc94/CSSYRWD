@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+body{
+  background-color: #02010a;
+  font-family: 'Dancing Script';
+
+}
+
+body img{
+  box-shadow: 2px 2px 2px #02010a;
+}
+
+.contenido{
+  max-width: 900px;
+  margin:auto;
+}
+
+
+/* CABECERA */
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  min-height: 50px;
+  color: #FFF;
+}
+
+header h1{
+  float: left;
+  text-shadow: 2px 2px 2px #02010a;
+  margin: 5px 10px;
+
+}
+
+header li{
+  float: left;
+  display: inline;
+  margin:auto 20px;
+}
+
+header nav{
+  float: right;
+  margin: 0;
+}
+
+nav a{
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav .actual{
+  text-decoration: none;
+}
+
+/* BODY */
+
+
+#imagencentral{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  width: 100%;
+  background-color: #82c3a6;
+  text-align: center;
+}
+
+
+#imagencentral img{
+  width: 80%;
+}
+
+#contenido2{
+  background-color: #d5c75f;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+#contenido2 .cajas{
+  width: 45%;
+  margin: auto;
+}
+
+#contenido2 .cajas img{
+  width: 100%;
+}
+
+#IMGRYP{
+  background-color: #d5c75f;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#IMGRYP .cajasRYP{
+  width: 30%;
+  margin: 15px 10px;
+}
+
+.cajasRYP img{
+  width: 100%;
+}
+
+
+/* EFECTO HOVER IMG */
+img[src="img/foto2.png"]:hover{
+  transform: rotate(10deg);
+  transition-duration: 1s;
+}
+
+img[src="img/foto3.png"]:hover{
+  transform: translate(20px,5px);
+  transition-duration: 1s;
+}
+
+img[src="img/foto2.png"]:hover{
+  box-shadow: 5px 5px #82c3a6;
+  border: 2px;
+}
+
+img[src="img/foto3.png"]:hover{
+  box-shadow: 5px 5px #82c3a6;
+  border: 2px;
+}
+
+/* PIE DE PAGINA */
+
+footer{
+  margin: 0;
+  background-color:  #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  display: flex;
+  width: 100%;
+
+}
+
+footer .caja{
+  width: 25%;
+  margin: 25px 10px;
+}
+
+footer h1{
+  margin: 0;
+  text-align: left;
+  font-size: 35px;
+}
+
+h4{
+  text-align: left;
+  font-size: 18px;
+}
+
+
+/* FILTROS IMAGENES */
+
+.blur{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.grises{
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.sepia{
+  filter: sepia(90%);
+  -webkit-filter: sepia(90%);
+}
+
+
+/*  MEDIA QUERIS */
+
+@media only screen and ( max-width: 900px ) {
+  header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+  }
+
+  header nav{
+    width: 100%;
+    flex-wrap:wrap;
+    margin: 10px auto;
+  }
+
+  header li{
+    width: 10.3%;
+  }
+
+  #imagencentral{
+    margin: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #contenido2{
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #contenido2 .cajas{
+    margin: 10px auto;
+    width: 80%;
+  }
+
+  #IMGRYP {
+    margin: auto;
+    flex-flow: column wrap;
+  }
+
+  #IMGRYP .cajasRYP{
+    margin: 10px auto;
+    width: 80%;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
+  footer .caja{
+    width: 100%;
+  }
+}
+
+@media only screen and ( max-width: 300px ){
+
+}
